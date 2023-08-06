@@ -4,8 +4,16 @@
   }
   .card {
     width: 300px;
-    height: 250px;
+    height: 215px;
   }
+
+  #syllabus,
+  #questions,
+  #notes,
+  #recommend {
+    font-size: 15px;
+  }
+
   .intro {
     margin-bottom: 50px;
   }

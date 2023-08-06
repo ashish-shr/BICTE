@@ -21,16 +21,16 @@ body {
   flex-direction: column;
   justify-content: center;
   font-family: "Poppins", sans-serif;
-  background-color: #121212;
+  background-color: #0d1117;
   min-height: 100vh;
-  color: #e0e0e0;
+  color: #eee;
 }
 
 /* Header styles */
 header {
   width: 100%;
   padding: 20px;
-  background-color: #212121;
+  background-color: #161b22;
   text-align: center;
 }
 
@@ -102,48 +102,55 @@ main {
   justify-content: center;
   flex-direction: row;
   gap: 20px;
-  max-width: 1000px;
+  max-width: 1500px;
 }
 
 .card {
   width: 275px;
-  height: 225px;
-  padding: 20px;
+  height: 220px;
+  padding-top: 30px;
   border: 1px solid #353535;
   border-radius: 8px;
-  background-color: #212121;
+  background-color: #161b22;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  transition: background-color 0.2s ease;
+  transition: border 0.2s ease-in-out;
+}
+
+#syllabus,
+#questions,
+#notes,
+#recommend {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
-  flex-wrap: wrap;
+  font-size: 1.25vw;
 }
 
 #recommend {
-  background: linear-gradient(#242424, #242424) padding-box,
+  background: linear-gradient(#161b22, #161b22) padding-box,
     linear-gradient(to right, rgba(255, 183, 89, 0.5), rgba(255, 0, 212, 0.5))
       border-box;
   border: 1px solid transparent;
-}
-
-#recommend p {
-  margin-top: 25px;
+  transition: background-color 0.2s ease-in-out;
 }
 
 #recommend:hover {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-#questions p,
-#notes p {
-  margin-top: 27px;
+.card:hover {
+  border: 1px solid #606060;
 }
 
-.card:hover {
-  background-color: #424242;
+.main-cards p {
+  background-color: #121212;
+  width: 100%;
+  margin-top: 0;
+  padding: 5px;
+  border-radius: 0 0 6px 6px;
+  text-align: center;
 }
 
 .about-desc {
@@ -157,7 +164,7 @@ main {
 
 a {
   text-decoration: none;
-  color: #e0e0e0;
+  color: #eee;
 }
 
 .syllabus-cards,
@@ -168,18 +175,19 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 20px;
-  max-width: 1500px;
+  max-width: 1200px;
 }
 
 .sCard {
   width: 275px;
   height: 225px;
+  padding-bottom: 20px;
   border: 1px solid #353535;
   border-radius: 8px;
-  background-color: #212121;
+  background-color: #161b22;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  transition: background-color 0.2s ease;
+  transition: border 0.2s ease;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -187,11 +195,8 @@ a {
   flex-wrap: wrap;
 }
 
-.sCard p {
-  margin-top: 25px;
-}
 .sCard:hover {
-  background-color: #424242;
+  border: 1px solid #606060;
 }
 
 .cCard {
@@ -201,24 +206,24 @@ a {
   padding: 20px;
   border: 1px solid #353535;
   border-radius: 8px;
-  background-color: #212121;
+  background-color: #161b22;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  transition: background-color 0.2s ease;
+  transition: border 0.2s ease;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .cCard:hover {
-  background-color: #424242;
+  border: 1px solid #606060;
 }
 
 /* Footer styles */
 footer {
   width: 100%;
   padding: 20px;
-  background-color: #212121;
-  color: #e0e0e0;
+  background-color: #161b22;
+  color: #eee;
   text-align: center;
 }
